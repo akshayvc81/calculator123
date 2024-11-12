@@ -1,0 +1,156 @@
+/* style.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #757171 !important; /* Ash background for the entire webpage */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+
+
+/* Calculator Title Styling */
+h2 {
+    font-family: "Bungee", sans-serif;    font-size: 2.5em;                    /* Increase font size */
+    color: #256bd2;                      /* Set text color to blue */
+    text-align: center;                  /* Center align the text */
+    margin-top: 20px;                    /* Add top margin for spacing */
+    margin-bottom: 20px;                 /* Add bottom margin */
+    text-transform: uppercase;           /* Make the text uppercase */
+    letter-spacing: 2px;                 /* Add space between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);  /* Optional shadow for emphasis */
+}
+
+
+/* Calculator Container */
+.calculator-container {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    width: fit-content;
+    margin-left: 395px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Calculator Display Styling */
+#result {
+    background-color: #e9ecef;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+/* Button Styling */
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Number and Operator Button Colors */
+button[id="seven"], button[id="eight"], button[id="nine"],
+button[id="four"], button[id="five"], button[id="six"],
+button[id="one"], button[id="two"], button[id="three"],
+button[id="zero"], button[id="dz"], button[id="poi"] {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+button[id="add"], button[id="sub"], button[id="mul"],
+button[id="div"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Special Buttons */
+button[id="ac"], button[id="bc"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button[id="equ"] {
+    background-color: #28a745;
+    color: #fff;
+width: 102PX;}
+
+/* Button Hover Effects */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Trivia Section Styling */
+p {
+    font-family: 'Libre Baskerville', serif;
+    color: #fefefe;
+    font-size: 1em;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.col-6 {
+    padding: 20px;
+    background-color: rgba(35, 154, 252, 0.9);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+/* Number Button Hover Effect */
+button[id="seven"]:hover, button[id="eight"]:hover, button[id="nine"]:hover,
+button[id="four"]:hover, button[id="five"]:hover, button[id="six"]:hover,
+button[id="one"]:hover, button[id="two"]:hover, button[id="three"]:hover,
+button[id="zero"]:hover, button[id="dz"]:hover, button[id="poi"]:hover {
+    background-color: #e0e0e0; /* Slightly darker background */
+    transform: scale(1.05);    /* Slightly enlarges button */
+    color: #000;               /* Darker text color */
+}
+/* Responsive Styling */
+
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 1.8em;
+    }
+    .calculator-container {
+        background-color: #ffffff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 3px;
+        width: fit-content;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    #result {
+        font-size: 1em;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9em;
+        margin: 3px;
+    }
+
+    button[id="equ"] {
+        width: 95px;
+    }
+
+    .col-6 {
+        padding: 10px;
+    }
+}
